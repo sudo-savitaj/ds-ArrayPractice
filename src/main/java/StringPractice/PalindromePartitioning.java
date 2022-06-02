@@ -2,9 +2,9 @@
 //https://www.geeksforgeeks.org/palindrome-partitioning-dp-17/
 package StringPractice;
 public class PalindromePartitioning {
-    int[][] t = new int[501][501];
+    int[][] t = new int[2001][2001];
     public void display() {
-        int result = palindromicPartition("aaa");
+        int result = palindromicPartition("aab");
         System.out.println(result);
 
 //        String str = "aaa";
@@ -38,12 +38,19 @@ public class PalindromePartitioning {
         for (int k=i;k<j;k++){
 
             int left;
-            if(t[i][k]!=-1) left = palindromicPartition(str, i, k);
-            else left = t[i][k];
+            if(t[i][k]==-1){
+                left = palindromicPartition(str, i, k);}
+            else {
+                left = t[i][k];
+            }
 
             int right;
-            if(t[k+1][j]!=-1) right= palindromicPartition(str, k + 1, j);
-            else right = t[k+1][j];
+            if(t[k+1][j]==-1) {
+                right= palindromicPartition(str, k + 1, j);
+            }
+            else {
+                right = t[k + 1][j];
+            }
 
             int cuts = 1 + left + right;
             if(minCuts > cuts){

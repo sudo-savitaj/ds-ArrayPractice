@@ -15,6 +15,14 @@ public class StringPractice {
 //       new PossiblePalindromePartitioning().display();
 //        new ReverseString().display();
 //       new RemoveDuplicates().display();
-       new CountBinarySubStrings().display();
+//       new CountBinarySubStrings().display();
+//       new DeleteOperationForTwoStrings().display();
+//       new SuperPalindromes();
+//       new FindandReplacePattern().demo();
+//       new PartitioningIntoMinimumNumberOfDeciBinaryNumbers();
+//       new IsBinaryNumberMultipleof3().demo();
+//       new PalindromePartitioning().display();
+//       new DecodeWays().display();
+       new BasicCalculatorII();
     }
 }

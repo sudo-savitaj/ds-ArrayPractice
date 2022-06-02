@@ -1,5 +1,7 @@
 package Arrays;
 
+import com.sun.scenario.effect.Merge;
+
 public class ArrayPractice {
     public void display() {
 //        new DuplicateZero().displayResult();
@@ -31,6 +33,26 @@ public class ArrayPractice {
 //        new SingleNumber();
 //        new PlusOne().display();
 //        new UglyNumber().display();
-        new BrickWall();
+//        new BrickWall();
+//        new TargetArrayWithMultipleSum();
+//        new MinimumMoves();
+//        new EvaluateReversePolishNotation();
+//        new MaxSumofRectangleNoLargerThanK();
+//        new TwoSum().display();
+//        new Subsets().display();
+//        new StoneGame().display();
+//        new ArrayNesting();
+//        new PartitionToKEqualSumSubsets();
+//        new IslandPerimeter();
+//        new FindAllDuplicatesInAnArray();
+//        new JumpGame().display();
+//        new DominoTrominoTiling();
+//        new ConsecutiveCharacters().display();
+//        new DecodeString().display();
+//        new MinimumAbsDifference();
+//        new MergeIntervals();
+//        new CheckIfAStringContainsAllBinaryCodesOfSizeK().display();
+//        new RunningSumOf1dArray();
+          new TransposeMatrix();
     }
 }

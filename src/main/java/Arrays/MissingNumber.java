@@ -16,4 +16,28 @@ public class MissingNumber {
         }
         return diff;
     }
+
+    public int missingNumber(int[] nums) {
+        int xor = 0;
+        for(int i=0;i<nums.length;i++)
+            xor= xor ^ i ^ nums[i];
+
+        return xor ^ nums.length;
+    }
+
+    public int MissingNumber(int[] nums) {
+        int sum = getSum(nums);
+        int n = nums.length;
+        int total = (n *(n+1))/2;
+        int missingNumber = total - sum;
+        return missingNumber;
+    }
+
+    private int getSum(int[] nums){
+        int sum = 0;
+        for(int num: nums){
+            sum += num;
+        }
+        return sum;
+    }
 }
